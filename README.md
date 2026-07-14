@@ -26,7 +26,7 @@ Apple Silicon (M1/M2/M3/M4).
 
 ## Windows / Linux
 
-Windows and Linux builds appear on the [release page](https://github.com/sahina/ironflow-desktop-releases/releases) as they ship. macOS (Apple Silicon) is the only build available today.
+Windows and Linux builds are not yet available; they'll be published to the [release page](https://github.com/sahina/ironflow-desktop-releases/releases) as they ship.
 
 ## Updates
 
