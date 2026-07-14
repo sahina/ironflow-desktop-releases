@@ -2,8 +2,10 @@
 
 Downloads for the **Ironflow Desktop** app.
 
-- Website: https://www.ironflow.ai
-- Book a demo: https://www.ironflow.ai/schedule-a-demo
+- Website: https://ironflow.run
+- Docs: https://docs.ironflow.run
+- Getting started: https://docs.ironflow.run/tutorials/getting-started/
+- Cloud: https://ironflow.run/cloud/
 - All releases: https://github.com/sahina/ironflow-desktop-releases/releases
 - **Latest release: https://github.com/sahina/ironflow-desktop-releases/releases/latest**
 
