@@ -18,7 +18,7 @@ Download the installer for your OS from the **latest release** page, then follow
 Apple Silicon (M1/M2/M3/M4).
 
 1. Download `Ironflow-<version>.dmg` (or the `-arm64.zip`).
-2. Open the `.dmg` and drag **Ironflow** into **Applications**.
+2. Open the `.dmg` (or extract the `.zip`) and drag **Ironflow** into **Applications**.
 3. First launch: the app isn't notarized yet, so macOS Gatekeeper may block it. Right-click the app → **Open** → **Open**. If it still won't open, run:
    ```bash
    xattr -dr com.apple.quarantine /Applications/Ironflow.app
@@ -32,16 +32,17 @@ Apple Silicon (M1/M2/M3/M4).
 
 ## Linux
 
-1. Download the `.AppImage` (or `.deb` for Debian/Ubuntu).
-2. **AppImage** — make it executable and run:
-   ```bash
-   chmod +x Ironflow-<version>.AppImage
-   ./Ironflow-<version>.AppImage
-   ```
-3. **.deb**:
-   ```bash
-   sudo apt install ./ironflow_<version>_amd64.deb
-   ```
+Download the `.AppImage` (or `.deb` for Debian/Ubuntu), then use the matching format:
+
+- **AppImage** — make it executable and run:
+  ```bash
+  chmod +x Ironflow-<version>.AppImage
+  ./Ironflow-<version>.AppImage
+  ```
+- **Debian/Ubuntu (.deb)**:
+  ```bash
+  sudo apt install ./ironflow_<version>_amd64.deb
+  ```
 
 ## Updates
 
