@@ -17,32 +17,16 @@ Download the installer for your OS from the **latest release** page, then follow
 
 Apple Silicon (M1/M2/M3/M4).
 
-1. Download `Ironflow-<version>.dmg` (or the `-arm64.zip`).
-2. Open the `.dmg` (or extract the `.zip`) and drag **Ironflow** into **Applications**.
+1. Download `desktop-electron-<version>.dmg` (or `desktop-electron-<version>-arm64.zip`).
+2. Open the `.dmg` (or extract the `.zip`) and drag **Ironflow Desktop** into **Applications**.
 3. First launch: the app isn't notarized yet, so macOS Gatekeeper may block it. Right-click the app → **Open** → **Open**. If it still won't open, run:
    ```bash
-   xattr -dr com.apple.quarantine /Applications/Ironflow.app
+   xattr -dr com.apple.quarantine "/Applications/Ironflow Desktop.app"
    ```
 
-## Windows
+## Windows / Linux
 
-1. Download the `.exe` installer (e.g. `Ironflow-Setup-<version>.exe`).
-2. Run it. SmartScreen may warn on an unsigned build — click **More info → Run anyway**.
-3. Follow the installer; launch Ironflow from the Start menu.
-
-## Linux
-
-Download the `.AppImage` (or `.deb` for Debian/Ubuntu), then use the matching format:
-
-- **AppImage** — make it executable and run:
-  ```bash
-  chmod +x Ironflow-<version>.AppImage
-  ./Ironflow-<version>.AppImage
-  ```
-- **Debian/Ubuntu (.deb)**:
-  ```bash
-  sudo apt install ./ironflow_<version>_amd64.deb
-  ```
+Windows and Linux builds are not yet available; they'll be published to the [release page](https://github.com/sahina/ironflow-desktop-releases/releases) as they ship.
 
 ## Updates
 
