@@ -2,12 +2,14 @@
 
 Downloads for the **Ironflow Desktop** app.
 
-- Website: https://ironflow.run
-- Docs: https://docs.ironflow.run
-- Getting started: https://docs.ironflow.run/tutorials/getting-started/
-- Cloud: https://ironflow.run/cloud/
-- All releases: https://github.com/sahina/ironflow-desktop-releases/releases
-- **Latest release: https://github.com/sahina/ironflow-desktop-releases/releases/latest**
+![Ironflow Desktop](docs/images/ironflow-desktop.png)
+
+- Website: <https://ironflow.run>
+- Docs: <https://docs.ironflow.run>
+- Getting started: <https://docs.ironflow.run/tutorials/getting-started/>
+- Cloud: <https://ironflow.run/cloud/>
+- All releases: <https://github.com/sahina/ironflow-desktop-releases/releases>
+- **Latest release: <https://github.com/sahina/ironflow-desktop-releases/releases/latest>**
 
 Download the installer for your OS from the **latest release** page, then follow the steps below.
 
@@ -20,6 +22,7 @@ Apple Silicon (M1/M2/M3/M4).
 1. Download `desktop-electron-<version>.dmg` (or `desktop-electron-<version>-arm64.zip`).
 2. Open the `.dmg` (or extract the `.zip`) and drag **Ironflow Desktop** into **Applications**.
 3. First launch: the app isn't notarized yet, so macOS Gatekeeper may block it. Right-click the app → **Open** → **Open**. If it still won't open, run:
+
    ```bash
    xattr -dr com.apple.quarantine "/Applications/Ironflow Desktop.app"
    ```
