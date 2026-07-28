@@ -2,8 +2,6 @@
 
 Downloads for the **Ironflow Desktop** app.
 
-![Ironflow Desktop](docs/images/ironflow-desktop.png)
-
 - Website: <https://ironflow.run>
 - Docs: <https://docs.ironflow.run>
 - Getting started: <https://docs.ironflow.run/tutorials/getting-started/>
@@ -12,6 +10,28 @@ Downloads for the **Ironflow Desktop** app.
 - **Latest release: <https://github.com/sahina/ironflow-desktop-releases/releases/latest>**
 
 Download the installer for your OS from the **latest release** page, then follow the steps below.
+
+## Screenshots
+
+Ironflow Desktop v0.5.
+
+### Dashboard + Ironflow agent — live metrics with a coding agent alongside
+
+Functions, runs, workers, component health, and the event feed at a glance. The **Ironflow agent** panel on the right is a coding agent grounded in your workspace, the Ironflow runtime, and the built-in Ironflow skills — it can build and verify against your running server without leaving the app.
+
+![Ironflow Desktop dashboard showing the Overview page with metrics and the Ironflow agent panel](docs/images/dashboard.png)
+
+### Add a workspace — point Ironflow at your project
+
+Open an existing project folder or start from a template.
+
+![Add a workspace screen with "Your project" and "Templates" tabs](docs/images/add-workspace.png)
+
+### Built-in docs — the full documentation, in-app
+
+Browse the Ironflow docs in a tab next to your workspace.
+
+![Built-in docs tab showing the Getting Started guide](docs/images/built-in-docs.png)
 
 > Availability by OS depends on which builds are attached to a given release. macOS (Apple Silicon) and Windows (x64) are available today; Linux builds appear on the release page as they ship.
 
