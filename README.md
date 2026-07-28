@@ -36,15 +36,24 @@ Browse the Ironflow docs in a tab next to your workspace.
 
 ![Built-in docs tab showing the Getting Started guide](docs/images/built-in-docs.png)
 
-> Availability by OS depends on which builds are attached to a given release. macOS (Apple Silicon) and Windows (x64) are available today; Linux builds appear on the release page as they ship.
+> All three platforms ship on every release: macOS (Apple Silicon and Intel), Windows (x64), and Linux (x64).
 
 ## macOS
 
-Apple Silicon (M1/M2/M3/M4).
+macOS 12 Monterey or later. Both Apple Silicon and Intel are supported — pick the matching download:
 
-1. Download `Ironflow-Desktop-<version>.dmg` (or `Ironflow-Desktop-<version>-arm64.zip`).
-2. Open the `.dmg` (or extract the `.zip`) and drag **Ironflow Desktop** into **Applications**.
-3. Launch **Ironflow Desktop** from **Applications**. The build is signed and notarized (Developer ID), so it opens without a Gatekeeper prompt.
+| Your Mac | Download |
+| --- | --- |
+| Apple Silicon (M1–M4) | `Ironflow-Desktop-<version>-arm64.dmg` |
+| Intel | `Ironflow-Desktop-<version>-x64.dmg` |
+
+Not sure? Run `uname -m` — it prints `arm64` for Apple Silicon, `x86_64` for Intel.
+
+1. Download the `.dmg` for your chip (or the equivalent `-mac-arm64.zip` / `-mac-x64.zip`).
+2. Open it and drag **Ironflow Desktop** into **Applications**.
+3. Launch it from **Applications**. The build is signed and notarized (Developer ID), so it opens without a Gatekeeper prompt.
+
+If macOS says *"this application is not supported on this Mac"*, you downloaded the wrong architecture — grab the other file.
 
 ## Windows
 
@@ -64,7 +73,11 @@ A direct `Ironflow-Desktop-<version>-setup.exe` installer is also on the [releas
 
 ## Linux
 
-Not yet available; Linux builds will be published to the [release page](https://github.com/sahina/ironflow-desktop-releases/releases) as they ship.
+x64, as an AppImage. Verified on Ubuntu 18.04+, Debian 10+, and Fedora 32+.
+
+```bash
+chmod +x Ironflow-Desktop-*.AppImage
+./Ironflow-Desktop-*.AppImage
 
 ## Updates
 
