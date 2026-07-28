@@ -11,6 +11,9 @@ Downloads for the **Ironflow Desktop** app.
 
 Download the installer for your OS from the **latest release** page, then follow the steps below.
 
+**Before you download:** check the [system requirements](https://docs.ironflow.run/tutorials/desktop/#system-requirements)
+— macOS 12+ (Apple Silicon or Intel), Windows 10+ (x64), or Linux x64.
+
 ## Screenshots
 
 Ironflow Desktop v0.5.
