@@ -12,7 +12,17 @@ Downloads for the **Ironflow Desktop** app.
 Download the installer for your OS from the **latest release** page, then follow the steps below.
 
 **Before you download:** check the [system requirements](https://docs.ironflow.run/tutorials/desktop/#system-requirements)
-— macOS 12+ (Apple Silicon or Intel), Windows 10+ (x64), or Linux x64.
+— macOS 12+, Windows 10+ (x64), or Linux x64.
+
+## Platform support
+
+> **macOS on Apple Silicon is the only supported platform.** Intel macOS, Windows, and Linux builds
+> are published on every release and auto-update normally, but they are **experimental** — they are
+> not regularly tested.
+>
+> This is a capacity limit, not a technical one: Ironflow is built by one developer, working on Apple
+> Silicon. Every platform's build pipeline is green. If you hit a problem on one of them — or want to
+> help look after one — [open an issue](https://github.com/sahina/ironflow-desktop-releases/issues).
 
 ## Screenshots
 
@@ -36,26 +46,27 @@ Browse the Ironflow docs in a tab next to your workspace.
 
 ![Built-in docs tab showing the Getting Started guide](docs/images/built-in-docs.png)
 
-> All three platforms ship on every release: macOS (Apple Silicon and Intel), Windows (x64), and Linux (x64).
+> Every release ships macOS, Windows (x64), and Linux (x64) builds. macOS on Apple Silicon is the supported one; the rest are experimental.
 
 ## macOS
 
-macOS 12 Monterey or later. Both Apple Silicon and Intel are supported — pick the matching download:
+macOS 12 Monterey or later. **Apple Silicon is the supported platform.**
 
-| Your Mac | Download |
-| --- | --- |
-| Apple Silicon (M1–M4) | `Ironflow-Desktop-<version>-arm64.dmg` |
-| Intel | `Ironflow-Desktop-<version>-x64.dmg` |
-
-Not sure? Run `uname -m` — it prints `arm64` for Apple Silicon, `x86_64` for Intel.
-
-1. Download the `.dmg` for your chip (or the equivalent `-mac-arm64.zip` / `-mac-x64.zip`).
+1. Download the `.dmg` from the latest release. When a release ships more than one Mac build, the
+   architecture is in the filename — take the one containing `arm64`. (Not sure which Mac you have?
+   Run `uname -m`: it prints `arm64` for Apple Silicon, `x86_64` for Intel.)
 2. Open it and drag **Ironflow Desktop** into **Applications**.
 3. Launch it from **Applications**. The build is signed and notarized (Developer ID), so it opens without a Gatekeeper prompt.
 
 If macOS says *"this application is not supported on this Mac"*, you downloaded the wrong architecture — grab the other file.
 
+Intel Macs can run the `x64` build where one is published, but it is untested and ships one known
+limitation: the built-in agent's `xz` and `zstd` compression paths fail with an error. The rest of the
+app, including the engine, works.
+
 ## Windows
+
+**Experimental** — published and auto-updating, but not regularly tested.
 
 x64 only. Install with [Scoop](https://scoop.sh):
 
@@ -73,11 +84,17 @@ A direct `Ironflow-Desktop-<version>-setup.exe` installer is also on the [releas
 
 ## Linux
 
-x64, as an AppImage. Verified on Ubuntu 18.04+, Debian 10+, and Fedora 32+.
+**Experimental** — published and auto-updating, but not regularly tested.
+
+x64, as an AppImage. Built against Ubuntu 18.04+, Debian 10+, and Fedora 32+.
 
 ```bash
 chmod +x Ironflow-Desktop-*.AppImage
 ./Ironflow-Desktop-*.AppImage
+```
+
+If it fails with `dlopen(): error loading libfuse.so.2`, install FUSE 2 (`sudo apt install libfuse2`
+on Ubuntu 22.04+) or run it once with `./Ironflow-Desktop-*.AppImage --appimage-extract-and-run`.
 
 ## Updates
 
