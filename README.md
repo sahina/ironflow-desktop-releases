@@ -1,5 +1,7 @@
 # Ironflow Desktop — Releases
 
+[![Latest version](https://img.shields.io/github/v/release/sahina/ironflow-desktop-releases?label=ironflow-desktop&color=blue)](https://github.com/sahina/ironflow-desktop-releases/releases/latest)
+
 Downloads for **Ironflow Desktop** — a desktop app that runs the Ironflow engine against your local
 project, with the dashboard, the docs, and a workspace-grounded coding agent in one window.
 
