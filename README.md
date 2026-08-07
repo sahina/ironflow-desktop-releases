@@ -18,7 +18,7 @@ project, with the dashboard, the docs, and a workspace-grounded coding agent in 
 >
 > This is a capacity limit, not a technical one: Ironflow is built by one developer, working on Apple
 > Silicon. Every platform's build pipeline is green. If you hit a problem on one of them — or want to
-> help look after one — [open an issue](https://github.com/sahina/ironflow-desktop-releases/issues).
+> help look after one — [open an issue](https://github.com/sahina/ironflow-issues/issues/new/choose).
 
 Requirements: macOS 12+ (Apple Silicon), Windows 10+ (x64), or Linux x64. Details in the
 [system requirements](https://docs.ironflow.run/tutorials/desktop/#system-requirements).
@@ -113,7 +113,11 @@ exact paths if you want a clean removal.
 
 ## Bugs & support
 
-<https://github.com/sahina/ironflow-desktop-releases/issues>
+<https://github.com/sahina/ironflow-issues/issues/new/choose>
+
+Issues are disabled on this repo so everything lands in one place. Security disclosures go to
+[private advisories](https://github.com/sahina/ironflow-issues/security/advisories/new), never a
+public issue.
 
 ## License
 
