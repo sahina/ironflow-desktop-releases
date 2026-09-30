@@ -20,7 +20,7 @@ project, with the dashboard, the docs, and a workspace-grounded coding agent in 
 > Silicon. Every platform's build pipeline is green. If you hit a problem on one of them — or want to
 > help look after one — [open an issue](https://github.com/sahina/ironflow-issues/issues/new/choose).
 
-Requirements: macOS 12+ (Apple Silicon), Windows 10+ (x64), or Linux x64. Details in the
+Requirements: macOS 13+ (Apple Silicon), Windows 10+ (x64), or Linux x64. Details in the
 [system requirements](https://docs.ironflow.run/tutorials/desktop/#system-requirements).
 
 ## Screenshots
@@ -47,7 +47,7 @@ Browse the Ironflow docs in a tab next to your workspace.
 
 ## macOS
 
-macOS 12 Monterey or later, Apple Silicon.
+macOS 13 Ventura or later, Apple Silicon.
 
 1. Download the `.dmg` from the [latest release](https://github.com/sahina/ironflow-desktop-releases/releases/latest).
 2. Open it and drag **Ironflow Desktop** into **Applications**.
